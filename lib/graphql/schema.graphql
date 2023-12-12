@@ -1,0 +1,132 @@
+schema {
+  query: RootQueryType
+}
+type RootQueryType {
+  timelineQuery(after: String, first: Int): TimelineConnection!
+}
+
+union Itemable = A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10
+
+type TimelineConnection {
+  items: [Itemable!]!
+}
+
+type A1 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A2 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A3 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A4 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A5 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A6 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A7 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A8 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A9 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
+
+type A10 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+  f: String
+  g: String
+  h: String
+}
