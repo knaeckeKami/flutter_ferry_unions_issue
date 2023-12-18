@@ -16,7 +16,7 @@ targets:
           # [bool] Add a generated fallback value for each enum value (except for ones that have a custom fallback value specified in the enum_fallbacks map). Defaults to false.
           global_enum_fallbacks: true
           data_class_config:
-            reuse_fragments: true
+            reuse_fragments: false
       ferry_generator|serializer_builder:
         enabled: true
         options:
