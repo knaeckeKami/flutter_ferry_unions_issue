@@ -5,7 +5,7 @@ type RootQueryType {
   timelineQuery(after: String, first: Int): TimelineConnection!
 }
 
-union Itemable = A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9 | A10
+union Itemable = A1 | A2 | A3 | A4 | A5 | A6 | A7 | A8 | A9
 
 type TimelineConnection {
   items: [Itemable!]!
@@ -21,6 +21,7 @@ type A1 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A2 {
@@ -33,6 +34,7 @@ type A2 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A3 {
@@ -45,6 +47,7 @@ type A3 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A4 {
@@ -57,6 +60,7 @@ type A4 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A5 {
@@ -69,6 +73,7 @@ type A5 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A6 {
@@ -81,6 +86,7 @@ type A6 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A7 {
@@ -93,6 +99,7 @@ type A7 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A8 {
@@ -105,6 +112,7 @@ type A8 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
 type A9 {
@@ -117,16 +125,81 @@ type A9 {
   f: String
   g: String
   h: String
+  b1: B
 }
 
-type A10 {
+#type A10 {
+#  id: ID!
+#  a: String
+#  b: String
+#  c: String
+#  d: String
+#  e: String
+#  f: String
+#  g: String
+#  h: String
+#  b1: B
+#}
+
+union B = B1 | B2 | B3
+
+type  B1 {
   id: ID!
   a: String
   b: String
   c: String
   d: String
   e: String
-  f: String
-  g: String
-  h: String
+  c1: C
+}
+
+type  B2 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+}
+
+type  B3 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+}
+
+union C = C1 | C2 | C3
+
+type  C1 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+}
+
+type  C2 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+}
+
+type  C3 {
+  id: ID!
+  a: String
+  b: String
+  c: String
+  d: String
+  e: String
+}
+
+enum E {
+  a, b
 }

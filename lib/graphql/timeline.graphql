@@ -99,30 +99,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 9871ms
-      ... on A9 {
-        id
-        a
-        b
-        c
-        d
-        e
-        f
-        g
-        h
-      }
-      # 120461ms
-      ... on A10 {
-        id
-        a
-        b
-        c
-        d
-        e
-        f
-        g
-        h
-      }
     }
   }
 }
