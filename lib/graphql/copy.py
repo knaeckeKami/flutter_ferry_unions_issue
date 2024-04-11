@@ -8,7 +8,6 @@ query timelineQuery($after: String, $first: Int!) {
     __typename
     items {
       __typename
-      # 8ms
       ... on A1 {
         id
         a
@@ -20,7 +19,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 10ms
       ... on A2 {
         id
         a
@@ -32,7 +30,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 11ms
       ... on A3 {
         id
         a
@@ -68,7 +65,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 39ms
       ... on A6 {
         id
         a
@@ -80,7 +76,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 131ms
       ... on A7 {
         id
         a
@@ -92,7 +87,6 @@ query timelineQuery($after: String, $first: Int!) {
         g
         h
       }
-      # 1159ms
       ... on A8 {
         id
         a
